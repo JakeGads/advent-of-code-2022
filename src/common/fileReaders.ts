@@ -2,6 +2,11 @@ import { readFileSync } from "fs";
 
 export function syncReadFile(filename: string) {
     const result = readFileSync(filename, 'utf-8');
-    console.log(result); 
     return result;
+}
+
+export function syncReadFileLines(filename: string) {
+    const result = syncReadFile(filename);
+    const arr = result.split('\n');
+    return arr;
 }

@@ -1,4 +1,4 @@
-import { syncReadFileLines } from "../common/fileReaders";
+import { FileToArray } from "../common/fileReaders";
 import { offsetAlpha } from "../common/commonVars";
 
 let id_index = 0;
@@ -23,7 +23,7 @@ class Rucksack{
             }
         }
     }
-}
+} 
 function innerMatch(innerArray: Array<Rucksack>){
     try {
         for(const char of innerArray[0].entire){
@@ -48,7 +48,7 @@ function innerMatch(innerArray: Array<Rucksack>){
     return 0;
 }
 
-let file = syncReadFileLines("src/day3/input.txt")
+let file = FileToArray("src/day3/input.txt")
 // file = [
 //     "vJrwpWtwJgWrhcsFMMfFFhFp",
 //     "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",

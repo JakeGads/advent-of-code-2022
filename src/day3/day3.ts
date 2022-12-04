@@ -1,4 +1,4 @@
-import { syncReadFileLines } from "../common/fileReaders";
+import { FileToArray } from "../common/fileReaders";
 import { offsetAlpha } from "../common/commonVars";
 
 class Rucksack{
@@ -19,7 +19,7 @@ class Rucksack{
     }
 }
 
-const file = syncReadFileLines("src/day3/input.txt")
+const file = FileToArray("src/day3/input.txt")
 let sum = 0;
 
 file.forEach((line) => {

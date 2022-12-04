@@ -1,5 +1,5 @@
-import { syncReadFileLines } from "../common/fileReaders";
-const file = syncReadFileLines("src/day2/input.txt");
+import { FileToArray } from "../common/fileReaders";
+const file = FileToArray("src/day2/input.txt");
 
 enum plays{
     ROCK,

@@ -5,7 +5,7 @@ export function syncReadFile(filename: string) {
     return result;
 }
 
-export function syncReadFileLines(filename: string) {
+export function FileToArray(filename: string) {
     const result = syncReadFile(filename);
     const arr = result.split('\n');
     return arr;

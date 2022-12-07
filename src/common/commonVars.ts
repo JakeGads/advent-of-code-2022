@@ -1,0 +1,1 @@
+export const offsetAlpha = "0abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

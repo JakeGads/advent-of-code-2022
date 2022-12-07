@@ -1,5 +1,5 @@
-import { syncReadFileLines } from "../common/fileReaders";
-const file = syncReadFileLines("src/day1/input.txt");
+import { FileToArray } from "../common/fileReaders";
+const file = FileToArray("src/day1/input.txt");
 
 let largestElfs = [0, 0, 0];
 let currentArr = [0];
